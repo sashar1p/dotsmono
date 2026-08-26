@@ -1,0 +1,46 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 18,
+
+  "modules-left": ["custom/sep", "ext/workspaces"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": ["cpu", "memory", "network"],
+
+  "ext/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*" : 9
+        }
+    },
+  "clock": {
+    "format": "{:%A %H:%M}",
+    "tooltip": false,
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false,
+  },
+
+  "memory": {
+        "format": " {used}GiB"
+   },
+
+  "network": {
+    "format-wifi": "󰤨 {essid}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤭",
+    "tooltip": false,
+  },
+
+  "custom/sep": {
+   "format" : "󰣨",
+   "interval" : 0
+   }
+}
